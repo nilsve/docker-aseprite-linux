@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  installer:
+    build: .
+    volumes:
+    - ./output:/output
+    - ./dependencies:/dependencies
