@@ -13,4 +13,4 @@ To simplify and speed up the build process, the build script uses the precompile
  * Run `docker-compose build`
  * Run `docker-compose up`
 
-You can now find the compiled version of Aseprite in the `*__*output/aseprite/build/bin` folder
+You can now find the compiled version of Aseprite in the `output/aseprite/build/bin` folder
