@@ -3,7 +3,7 @@
 # Download Skia
 if [ ! -d "/dependencies/skia" ]
 then
-  curl -L https://github.com/aseprite/skia/releases/download/m81-b607b32047/Skia-Linux-Release-x64.zip --output /dependencies/skia.zip
+  curl -L https://github.com/aseprite/skia/releases/download/m96-2f1f21b8a9/Skia-Linux-Release-x64.zip --output /dependencies/skia.zip
   unzip /dependencies/skia.zip -d /dependencies/skia
 fi
 
