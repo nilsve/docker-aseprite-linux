@@ -20,3 +20,7 @@ If any of the folders of the projects folder isn't empty, the script will skip c
  * Grab a cup of coffee, since this can take quite a while (Compiling build deps, skia, and aseprite)
 
 You can now find the compiled version of Aseprite in the `output/aseprite/build/bin` folder
+
+## FAQ
+If you get the following error when running Aseprite: `./aseprite: error while loading shared libraries: libdeflate.so.0: cannot open shared object file: No such file or directory`, make sure you have libdeflate installed on your system. Please run
+`sudo apt install -y libdeflate0 libdeflate-dev`
