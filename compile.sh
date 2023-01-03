@@ -13,7 +13,7 @@ fi
 
 if [ ! -d "/dependencies/skia" ]
 then
-  git clone -b aseprite-m96 https://github.com/aseprite/skia.git
+  git clone -b aseprite-m102 https://github.com/aseprite/skia.git
 fi
 
 export PATH="${PWD}/depot_tools:${PATH}"
@@ -32,7 +32,7 @@ cd /output
 
 if [ ! -d "/output/aseprite" ]
 then
-  git clone -b v1.2.34.1 --recursive https://github.com/aseprite/aseprite.git
+  git clone -b v1.2.40 --recursive https://github.com/aseprite/aseprite.git
 fi
 
 cd aseprite
