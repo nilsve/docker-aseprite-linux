@@ -15,8 +15,7 @@ If any of the folders of the projects folder isn't empty, the script will skip c
  * Install docker
  * Clone this repository 
  * cd into cloned repository
- * Run `docker-compose build`
- * Run `docker-compose up`
+ * Run `make build` or `make build-compose` (The latter will use docker-compose to build the image)
  * Grab a cup of coffee, since this can take quite a while (Compiling build deps, skia, and aseprite)
 
 You can now find the compiled version of Aseprite in the `output/aseprite/build/bin` folder
