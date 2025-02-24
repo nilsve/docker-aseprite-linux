@@ -28,14 +28,14 @@ gn gen out/Release-x64 --args="is_debug=false is_official_build=true skia_use_sy
 ninja -C out/Release-x64 skia modules
 
 echo "Download Aseprite and compile"
-cd /output
+cd $HOME/Downloads/
 
-if [ ! -d "/output/aseprite" ]
+if [ ! -d "$HOME/Downloads/aseprite" ]
 then
   git clone -b v1.2.40 --recursive https://github.com/aseprite/aseprite.git
 fi
 
-cd aseprite
+cd $HOME/Downloads/aseprite
 mkdir -p build
 cd build
 

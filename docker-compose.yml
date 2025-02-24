@@ -4,5 +4,5 @@ services:
   installer:
     build: .
     volumes:
-    - "./output:/output:rw"
+    - "$HOME/Downloads:/home/user/Downloads:rw"
     - "./dependencies:/dependencies:rw"
