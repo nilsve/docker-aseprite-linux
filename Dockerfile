@@ -12,9 +12,9 @@ RUN apt-get install -y git unzip curl build-essential cmake ninja-build libx11-d
 COPY compile.sh /
 
 VOLUME /dependencies
-VOLUME /output
+VOLUME $HOME/Downloads/
 
-WORKDIR /output
+WORKDIR $HOME/Downloads/
 
 RUN ["chmod", "+x", "/compile.sh"]
 

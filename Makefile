@@ -2,7 +2,7 @@ IMAGE_NAME := docker-aseprite
 
 build: build-image
 	docker run --rm \
-	-v ${PWD}/output:/output \
+	-v ${HOME}/Downloads:/home/user/Downloads \
 	-v ${PWD}/dependencies:/dependencies \
 	${IMAGE_NAME}
 
