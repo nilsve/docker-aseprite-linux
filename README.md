@@ -4,7 +4,7 @@ This repository allows you to compile Aseprite without installing any build tool
 
 After spending hours trying to get Aseprite to compile, I decided to just make a Docker image for it 
 
-Currently the script checks out Skia version `m102` and Aseprite version `1.2.40`. You can easily change this in `compile.sh` by changing the `-b` flag to the desired versions.
+Currently the script checks out Skia version `m124` and Aseprite version `1.3.15.2`. You can easily change this in `compile.sh` by changing the `-b` flag to the desired versions.
 
 If any of the folders of the projects folder isn't empty, the script will skip checking out the latest versions. In order to re-download, delete the according folder.
 * ./dependencies/depot_tools
