@@ -11,12 +11,13 @@ then
   git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 fi
 
+export PATH="${PWD}/depot_tools:${PATH}"
+gclient
+
 if [ ! -d "/dependencies/skia" ]
 then
   git clone -b aseprite-m102 https://github.com/aseprite/skia.git
 fi
-
-export PATH="${PWD}/depot_tools:${PATH}"
 
 cd skia
 pwd
