@@ -68,7 +68,7 @@ cd build
 
 echo "Compiling Asperite"
 cmake \
-  -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+  -DCMAKE_BUILD_TYPE=Release \
   -DLAF_BACKEND=skia \
   -DSKIA_DIR=/dependencies/skia \
   -DSKIA_LIBRARY_DIR=/dependencies/skia/out/Release-x64 \
