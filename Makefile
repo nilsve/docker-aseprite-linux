@@ -1,10 +1,15 @@
 IMAGE_NAME := docker-aseprite
 
+.PHONY: build build-compose build-image clean
+
+clean:
+	sudo rm -rf ./output ./dependencies 2>/dev/null || true
+
 build: build-image
-	docker run --rm \
+	docker run -it --rm \
 	-v ${PWD}/output:/output \
 	-v ${PWD}/dependencies:/dependencies \
-	${IMAGE_NAME}
+	${IMAGE_NAME} $(ARGS)
 
 build-compose:
 	docker-compose build

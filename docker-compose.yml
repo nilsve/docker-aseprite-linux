@@ -1,8 +1,10 @@
-version: '2'
-
 services:
   installer:
-    build: .
+    build:
+      context: .
+      args:
+        - TZ=${TZ:-UTC}
+        - LANG=${LANG:-en_US.UTF-8}
     volumes:
     - "./output:/output:rw"
     - "./dependencies:/dependencies:rw"
